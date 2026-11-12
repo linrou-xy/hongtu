@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0c0908">
+  <meta name="description" content="红途行迹：沿南梁、会宁、兰州三处地标，记录一条属于甘农青年的红色行走路线。">
+  <title>行迹 | 红途 · 甘肃红色地标</title>
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <noscript>
+    <style>
+      [data-reveal] { opacity: 1 !important; transform: none !important; }
+    </style>
+  </noscript>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <div class="scroll-progress" data-progress aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="../index.html" aria-label="红途首页">
+      <span class="brand__seal">
+        <img src="../images/gsau-emblem.png" alt="甘肃农业大学校徽" width="36" height="36">
+      </span>
+      <span class="brand__type">
+        <strong>红途</strong>
+        <small>RED ROUTE · GANSU</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="打开导航" aria-expanded="false" aria-controls="site-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="主导航">
+      <a href="../index.html"><i>01</i>出发</a>
+      <a class="is-active" href="route.html"><i>02</i>行迹</a>
+      <a href="archive.html"><i>03</i>档案</a>
+      <a href="youth.html"><i>04</i>回声</a>
+    </nav>
+
+    <div class="header-meta" aria-hidden="true">
+      <span>ROUTE 01—03</span>
+      <span>1934 / 1936 / 1949</span>
+    </div>
+  </header>
+
+  <main id="main" class="route-page">
+    <!-- 内页首屏 -->
+    <section class="page-hero">
+      <div class="page-hero__ghost" aria-hidden="true">02</div>
+      <div class="container">
+        <nav class="breadcrumb" aria-label="面包屑">
+          <a href="../index.html">出发</a>
+          <span aria-hidden="true">/</span>
+          <span>行迹</span>
+        </nav>
+
+        <div class="page-hero__grid">
+          <div>
+            <p class="page-hero__index">FIELD NOTES / 行迹</p>
+            <h1 class="page-hero__title">行<span>迹</span></h1>
+          </div>
+          <div class="page-hero__lead">
+            <p>我没有按“景点攻略”的方式走。每到一处，我会先站十分钟，什么都不做，只看风从哪里来、人往哪里去。然后才打开笔记本。</p>
+            <p>这条路线从陇东的南梁开始，向西南经过会宁，最后抵达兰州。它既是地理上的移动，也是我对“红色”两个字的重新理解。</p>
+            <div class="page-hero__meta">
+              <span>3 处地标</span>
+              <span>跨越 15 年</span>
+              <span>1 份第一人称笔记</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="route-intro">
+      <div class="container route-intro__grid">
+        <div class="route-intro__note">
+          <strong>行走提示</strong>
+          点击左侧地图上的红色节点，可以跳转到对应站点；向下阅读时，地图会同步标记你正在看的地方。
+        </div>
+        <p class="route-intro__text">地图上是一条线，走起来却是很多个具体的瞬间：一段山路、一块石碑、一位在纪念塔下晒太阳的老人，还有突然吹过来的风。</p>
+      </div>
+    </section>
+
+    <!-- 地图 + 站点 -->
+    <section class="container route-layout">
+      <aside class="route-map-wrap" aria-label="甘肃红色地标路线图">
+        <div class="route-map__head">
+          <span>GANSU / ROUTE MAP</span>
+          <span>1934 — 1949</span>
+        </div>
+
+        <div class="route-map">
+          <img class="route-map__shape" src="../images/gansu-shape.png" alt="甘肃省轮廓示意图" width="1000" height="809">
+          <svg class="route-map__lines" viewBox="0 0 1000 809" preserveAspectRatio="none" aria-hidden="true">
+            <path class="route-map__route" d="M 952 500 C 892 528, 838 548, 784 558 S 732 542, 702 534"></path>
+          </svg>
+
+          <button class="route-marker route-marker--east is-active" type="button" data-target="stop-nanliang" aria-label="南梁" style="--x: 95.2%; --y: 61.8%">
+            <span class="route-marker__dot" aria-hidden="true"></span>
+            <span>南梁</span>
+          </button>
+          <button class="route-marker route-marker--huining" type="button" data-target="stop-huining" aria-label="会宁" style="--x: 78.4%; --y: 69%">
+            <span class="route-marker__dot" aria-hidden="true"></span>
+            <span>会宁</span>
+          </button>
+          <button class="route-marker route-marker--lanzhou" type="button" data-target="stop-lanzhou" aria-label="兰州" style="--x: 70.2%; --y: 66%">
+            <span class="route-marker__dot" aria-hidden="true"></span>
+            <span>兰州</span>
+          </button>
+        </div>
+
+        <div class="route-map__legend">
+          <span><i aria-hidden="true"></i>行走路线</span>
+          <span>示意图 · 非精确比例</span>
+        </div>
+      </aside>
+
+      <div class="route-list">
+        <!-- 第一站 -->
+        <article class="route-stop is-current" id="stop-nanliang" data-stop="nanliang" tabindex="-1">
+          <div class="route-stop__media route-stop__media--graphic" aria-hidden="true">
+            <span class="route-star"></span>
+          </div>
+          <div class="route-stop__body">
+            <div class="route-stop__meta">
+              <span>第一站 / 庆阳 · 华池</span>
+              <span>1934</span>
+            </div>
+            <h2>南梁：<br>山沟里的星火</h2>
+            <p class="route-stop__text">南梁藏在子午岭深处。上世纪三十年代，刘志丹、谢子长、习仲勋等共产党人在这里创建陕甘边革命根据地。1934 年 11 月，陕甘边区苏维埃政府成立。后来，这里成为中央红军长征的落脚点，也是八路军奔赴抗日前线的出发点之一。</p>
+            <div class="route-note">
+              <strong>行走笔记 / 01</strong>
+              山里的风很硬。站在旧址前，我忽然明白“根据地”三个字不是地图上的一块颜色，而是有人愿意把日子过在这里，把命也放在这里。
+            </div>
+          </div>
+        </article>
+
+        <!-- 第二站 -->
+        <article class="route-stop" id="stop-huining" data-stop="huining" tabindex="-1">
+          <div class="route-stop__media">
+            <img src="../images/huishi-gate.webp" alt="会宁红军会师旧址的会师门与门前石碑" width="1200" height="1600" loading="lazy" decoding="async">
+          </div>
+          <div class="route-stop__body">
+            <div class="route-stop__meta">
+              <span>第二站 / 白银 · 会宁</span>
+              <span>1936.10</span>
+            </div>
+            <h2>会宁：<br>走到一起的人</h2>
+            <p class="route-stop__text">1936 年 10 月，红军三大主力先后在会宁、静宁将台堡等地会师。长征在这里画上句号，也把新的任务摆到面前。会师门是旧城的西门，门洞不高，门前的石碑被摸得发亮。</p>
+            <div class="route-note">
+              <strong>行走笔记 / 02</strong>
+              我在门洞下遇到一位带孩子来的父亲。孩子问：“他们为什么要走那么远？”父亲想了很久，说：“因为想让后来的人不用再走。”这句话我记了一路。
+            </div>
+          </div>
+        </article>
+
+        <!-- 第三站 -->
+        <article class="route-stop" id="stop-lanzhou" data-stop="lanzhou" tabindex="-1">
+          <div class="route-stop__media">
+            <img src="../images/lanzhou-bridge.webp" alt="1949年8月26日中国人民解放军进入兰州黄河铁桥" width="1200" height="898" loading="lazy" decoding="async">
+          </div>
+          <div class="route-stop__body">
+            <div class="route-stop__meta">
+              <span>第三站 / 兰州</span>
+              <span>1949.08.26</span>
+            </div>
+            <h2>兰州：<br>桥这头的清晨</h2>
+            <p class="route-stop__text">1949 年 8 月 25 日，兰州战役总攻开始；8 月 26 日，兰州解放。中山桥横跨黄河，是这座城市最醒目的坐标之一。战斗发生时，桥面与河水一起见证了政权更替的黎明。</p>
+            <div class="route-note">
+              <strong>行走笔记 / 03</strong>
+              今天的桥头有拍照的游客、跑步的人和卖水的老奶奶。历史没有消失，它只是换了一种方式，变成了我们可以自由经过的日常。
+            </div>
+          </div>
+        </article>
+
+        <!-- 回到今天 -->
+        <article class="route-stop" id="stop-today" data-stop="today" tabindex="-1">
+          <div class="route-stop__media">
+            <img src="../images/campus-aerial.webp" alt="甘肃农业大学校园与黄河沿岸航拍" width="1400" height="788" loading="lazy" decoding="async">
+          </div>
+          <div class="route-stop__body">
+            <div class="route-stop__meta">
+              <span>回到今天 / 甘农校园</span>
+              <span>2026</span>
+            </div>
+            <h2>把最后一站，<br>留给脚下</h2>
+            <p class="route-stop__text">甘肃农业大学的前身是 1946 年创建于兰州的国立兽医学院，1958 年成立甘肃农业大学。学校守着“臻进人类健康、裨益国民生计”的初心，也把课堂延伸到试验田、科技小院和乡村振兴一线。</p>
+            <div class="route-note">
+              <strong>行走笔记 / 04</strong>
+              走完三处地标，我回到学校。图书馆的灯、操场的风、试验田里的苗，这些看似普通的画面，正是前人走了很远的路才换来的“后来”。
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="route-quote" data-reveal>
+        <p>“我们记住历史，不是为了停在原地，<br>而是为了知道<em>下一步往哪里走</em>。”</p>
+        <footer>红途 · 行走结束处，也是出发处</footer>
+      </div>
+
+      <div class="next-page">
+        <span>NEXT / 红色档案</span>
+        <a href="archive.html">翻开被时间压过的纸页 <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-brand__seal">
+            <img src="../images/gsau-emblem.png" alt="甘肃农业大学校徽" width="58" height="58" loading="lazy">
+          </span>
+          <div>
+            <h2>红途</h2>
+            <p>从南梁的星火，到会宁的会师，再到兰州的黎明。以脚步丈量，以青春作答。</p>
+          </div>
+        </div>
+
+        <nav class="footer-nav" aria-label="页脚导航">
+          <a href="../index.html">出发</a>
+          <a href="route.html">行迹</a>
+          <a href="archive.html">档案</a>
+          <a href="youth.html">回声</a>
+          <a href="route.html#stop-nanliang">南梁</a>
+          <a href="route.html#stop-lanzhou">兰州</a>
+        </nav>
+
+        <div class="footer-note">
+          <strong>影像与资料</strong>
+          <p>校园影像来自甘肃农业大学官网；历史影像来自 Wikimedia Commons，分别属于公有领域或 CC BY-SA 3.0，页面中已作裁切与调色处理。</p>
+          <details class="credits">
+            <summary>查看来源与授权</summary>
+            <p>兰州黄河铁桥历史照片：Public Domain；兰州战役照片：Public Domain；会师门照片：DarthVachel，CC BY-SA 3.0；甘肃省轮廓示意图据 Wikimedia Commons 地图资料整理。文字根据公开校史与地方党史资料整理。</p>
+          </details>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 红途 · 甘农青年行走档案</span>
+        <span>以脚步丈量 · 以青春作答</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js" defer></script>
+  <script src="../js/route.js" defer></script>
+</body>
+</html>
